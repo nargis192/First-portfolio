@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+    <title>Lending page</title>
+    <link rel="shortcut icon" href="./Amenities/Favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./homepage.css">
+    <script src="https://kit.fontawesome.com/2d3c503f69.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="home">
+              <div class="header">
+                <h2>Portfolio</h2>
+                <nav class="navbar">
+                    <ul>
+                     <a href="#home" class="home active-tool " ><li>home</li></a>
+                     <a href="#project" class="project " ><li>Projects</li></a>
+                     <a href="#CONTACT" class="contact " ><li>Contact</li></a>
+                    </ul>
+                </nav>
+              </div>
+              <div class="content">
+                 <div class="image">
+                   <img src="./Amenities/developer image.jpg" alt="loading image">
+                 </div>
+                 <div class="maincontent">
+                    <span class="one">Hi</span>
+                    <span class="two">,I am</span>
+                    <span class="three">Shaikh Nargis</span>
+                    <h1>Full stack web Developer</h1>
+                 </div>
+              </div>
+         </div>
+         <div id="project">
+            <div class="projectheader"> <h1>PROJECTS</h1></div>
+            <div class="projectcontent">
+                <!-- div1 -->
+                <div class="div1">
+                    <div class="imagecard">
+                          <img src="./Amenities/temp convertor image.png" alt="card">
+                    </div>
+                    <div class="cardheader">
+                       <a href="https://nargis192.github.io/temp-converter/" target="_blank">TEMPERATURE CONVERTER</a>
+                    </div>
+                </div>
+               <!-- div2 -->
+               <div class="div1">
+                <div class="imagecard">
+                      <img src="./Amenities/WhatsApp Image 2023-08-30 at 7.53.42 AM (1).jpeg" alt="card">
+                </div>
+                <div class="cardheader">
+                   <a href="https://nargis192.github.io/2nd-web-of-html-css/" target="_blank">LOGIC PAGE</a>
+                </div>
+               </div>
+               <!-- div3 -->
+               <div class="div1">
+                <div class="imagecard">
+                      <img src="./Amenities/RECIPE.png" alt="card">
+                </div>
+                <div class="cardheader">
+                   <a href="https://bucolic-narwhal-59101e.netlify.app/" target="_blank">MY RECIPES WEB</a>
+                </div>
+                </div>
+                <!-- div4 -->
+                <div class="div1">
+                    <div class="imagecard">
+                          <img src="./Amenities/CALCY.png" alt="card">
+                    </div>
+                    <div class="cardheader">
+                       <a href="https://nargis192.github.io/my-calculator/" target="_blank">MY CALCULATOR</a>
+                    </div>
+                </div>
+                <!-- div5 -->
+                <div class="div1">
+                    <div class="imagecard">
+                          <img src="./Amenities/1ST WEB.png" alt="card">
+                    </div>
+                    <div class="cardheader">
+                       <a href="https://nargis192.github.io/1st-web/" target="_blank">FIRST WEB</a>
+                    </div>
+                </div>
+                 <!-- div6-->
+                 <div class="div1">
+                    <div class="imagecard">
+                          <img src="./Amenities/LIST.png" alt="card">
+                    </div>
+                    <div class="cardheader">
+                       <a href="https://nargis192.github.io/Todo-list/" target="_blank">TODO-LIST</a>
+                    </div>
+                </div>
+         </div>
+
+         <div id="CONTACT">
+            <h1 style="color:white; font-size:3rem; font-weight:bold; font-family:Poppins, sans-serif;">Let's work together...</h1>
+            <div class="contactdiv1">
+               <div class="cont1">
+                  <i class="fa-brands fa-linkedin" style="color: #f2f2f2; font-size:1.5rem "></i>
+               <span><a href="https://www.linkedin.com/in/nargis-shaikh-/" target="_blank" style="color:white; font-size:1.5rem; font-weight:bold; font-family:Poppins, sans-serif;">Linkedin</a></span>
+               </div>
+               <div class="cont2">
+                  <i class="fa-regular fa-envelope" style="color: #f2f2f2; font-size:1.5rem "></i>
+               <span style="color: #f2f2f2; font-size:1.5rem">Mail id: shaikhnargis194@gmail.com</span>
+               </div>
+               
+            </div>
+               <div class="contactdiv2">
+                  <i class="fa-brands fa-whatsapp"style="color: #f2f2f2; font-size:1.5rem "></i>
+                  <i class="fa-solid fa-phone" style="color: #f2f2f2; font-size:1.5rem "></i>
+                  <span style="color: #f2f2f2; font-size:1.5rem "></span>
+               </div>
+              
+          </div>
+    </div>
+</body>
+<script>
+    let home=document.querySelector(".home");
+    console.log(home);
+    let project=document.querySelector(".project");
+    console.log(project);
+    let contact=document.querySelector(".contact");
+    console.log(contact);
+    let active=document.querySelectorAll(".active-tool");
+    console.log(active);
+
+    home.addEventListener("click" , function(){
+      home.classList.add("active-tool");
+      project.classList.remove("active-tool");
+      contact.classList.remove("active-tool");
+    });
+    project.addEventListener("click" , function(){
+      home.classList.remove("active-tool");
+      project.classList.add("active-tool");
+      contact.classList.remove("active-tool");
+    });
+    contact.addEventListener("click" , function(){
+      home.classList.remove("active-tool");
+      project.classList.remove("active-tool");
+      contact.classList.add("active-tool");
+    });
+   
+   
+
+</script>
